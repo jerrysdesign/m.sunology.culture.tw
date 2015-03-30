@@ -9,6 +9,7 @@
 	@extend %nav-fullwidth;
 	a {
 		color: $colorNavBar-link;
+		font-size: $fontSizeNavBar;
 	}
 }
 @mixin png-img($image-name) {
@@ -19,7 +20,7 @@
 }
 %nav-bar-icon {
 	background-position: center 8px;
-	padding: 44px 8px 8px;
+	padding: 44px 4px 8px;
 	@extend %bg-no-repeat;
 	background-size: 46px 36px;
 }

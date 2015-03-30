@@ -407,6 +407,7 @@ img {
 }
 .navbar a {
   color: white;
+  font-size: 12px;
 }
 
 .item-database, .item-ebook, .item-home {
@@ -415,7 +416,7 @@ img {
 
 .item-database, .item-ebook, .item-home {
   background-position: center 8px;
-  padding: 44px 8px 8px;
+  padding: 44px 4px 8px;
   background-size: 46px 36px;
 }
 
