@@ -39,16 +39,16 @@ $monospace				: 'Courier New', Courier, monospace; 	// Monospace Fonts
 // 是描述性(名詞)而不是具體的顏色
 // 整個專案保持項目一致性，使之容易變更
 
-$primary				: #82C250;
+$primary					: #82C250;
 $transparent			: transparent;
 
 $colorGrayLighter		: #e5e5e5;
 $colorGrayLight			: #b1b1b1;
-$colorGray				: #7d7d7d;
+$colorGray					: #7d7d7d;
 $colorGrayDark			: #585858;
 $colorGrayDarker		: #333333;
 
-$colorRed				: #ef6465;
+$colorRed					: #ef6465;
 $colorOrange			: #f48a30;
 $colorGreen				: #90af45;
 $colorBlue				: #1c7ab4;
@@ -59,12 +59,12 @@ $colorpurple			: #7a43b6;
 
 // W3C Color Name
 $white					: #FFFFFF;
-$red					: #FF0000;
+$red						: #FF0000;
 $orange					: #FFA500;
 $green					: #008000;
-$blue					: #0000FF;
+$blue						: #0000FF;
 $yellow					: #FFFF00;
-$pink					: #FFC0CB;
+$pink						: #FFC0CB;
 $purple					: #800080;
 $black					: #000000;
 
@@ -79,15 +79,15 @@ $colorBelizeHole		: #2980b9;
 $colorAmethyst			: #9b59b6;
 $colorWisteria			: #8e44ad;
 $colorWetAsphalt		: #34495e;
-$colorMidnightBlue		: #2c3e50;
+$colorMidnightBlue	: #2c3e50;
 $colorSunFlower			: #f1c40f;
-$colorOrange			: #f39c12;
-$colorCarrot			: #e67e22;
-$colorPumpkin			: #d35400;
+$colorOrange				: #f39c12;
+$colorCarrot				: #e67e22;
+$colorPumpkin				: #d35400;
 $colorAlizarin			: #e74c3c;
 $colorPomegranate		: #c0392b;
-$colorClouds			: #ecf0f1;
-$colorSilver			: #bdc3c7;
+$colorClouds				: #ecf0f1;
+$colorSilver				: #bdc3c7;
 $colorConcrete			: #95a5a6;
 $colorAsbestos			: #7f8c8d;
 
@@ -165,12 +165,12 @@ $black-95: darken(white, 95%);
 // Allows us to avoid naming based on html object. 
 // Eg. A h1 can be smaller visually, than a h4.
 $alpha		: 42px;
-$beta		: 32px;
+$beta			: 32px;
 $gamma		: 28px;
 $delta		: 26px;
 $epsilon	: 24px;
-$zeta		: 20px;
-$eta		: 18px;
+$zeta			: 20px;
+$eta			: 18px;
 $theta		: 15px;
 $iota 		: 14px;
 $kappa		: 12px;
@@ -187,17 +187,17 @@ $codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // Base color
 $backgroundBody		: #fff;
-$colorBody			: #333;
+$colorBody				: #333;
 $colorHeadings		: #222;
 
 // Grid
-$gridWidth			: 1000;
+$gridWidth				: 1000;
 $gridGutterWidth	: 30;
 
 // Type
-$baseFontSize		: 13;
+$baseFontSize			: 13;
 $baseLineHeight		: 1.615;
-$baseLine			: $baseFontSize * $baseLineHeight; //21
+$baseLine					: $baseFontSize * $baseLineHeight; //21
 $baseLineInEms		: $baseLine / $baseFontSize; //1.615
 
 // Heading
@@ -216,22 +216,22 @@ $h5SubheadingFontSize: $baseFontSize - 2px; // 12px
 
 // Font size
 $superSmallFontSize		: $baseFontSize - 4px; // 10px
-$smallFontSize			: $baseFontSize - 2px; // 12px
-$leadFontSize			: $baseFontSize + 4px; // 18px
-$bigFontSize			: $baseFontSize + 4px; // 18px
-$quoteFontSize			: $baseFontSize + 2px; // 16px
+$smallFontSize				: $baseFontSize - 2px; // 12px
+$leadFontSize					: $baseFontSize + 4px; // 18px
+$bigFontSize					: $baseFontSize + 4px; // 18px
+$quoteFontSize				: $baseFontSize + 2px; // 16px
 $buttonsSmallFontSize	: $baseFontSize - 3px; // 11px
 
 // Colors
 $colorBlack		: #0f0f0f;
 $colorBlue		: #3d58a8;
-$colorRed		: #d70a16;
+$colorRed			: #d70a16;
 $colorGreen		: #159776;
 $colorYellow	: #fddc43;
 
 // LinkColor
-$colorLink		: #3570c3;
-$colorLinkHover	: $colorRed;
+$colorLink			: $black-65;
+$colorLinkHover	: $black-65;
 
 // Forms
 $fieldsBottom	: 1.6em;
@@ -247,4 +247,6 @@ $modal-elements: fields, com-dropdown, form, msg-errors, btn-close;
 
 
 // 專案自定變數
-$bannerBg: #e2e1dc;
+$colorNavBar-01: #b94136;
+$colorNavBar-02: #c18c1a;
+$colorNavBar-03: #e9b700;
