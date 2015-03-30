@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Global Defaults
+   ========================================================================== */
+
+// =Typography
+// -----------------------------------------------------------------------------
+html, body {
+	overflow-x:		hidden;
+}
+body {
+	// font-family:	$baseFontFamily;
+	font-family: 	$baseFontFamily;
+	font-size:		$baseFontSize + 0px;
+	@include rem('line-height', $baseLineInEms);
+	font-weight:	$baseFontWeight;
+	color:				$baseFontColor;
+	background:		$baseBackground;
+	@include clearfix;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+a {
+	color: $action;
+	text-decoration: none;
+	// @include transition();
+	@include link-active-styles {
+		text-decoration: none;
+		color: $actionRespond;
+	}
+}
+img { max-width: 100%;}
+
+
+// HEADINGS
+// -----------------------------------------------------------------------------
+// .title,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// 	font-family: $headingsFontFamily;
+// 	font-weight: bold;
+// 	color: $colorHeadings;
+// 	text-rendering: optimizeLegibility;
+// }
+// h1 {
+// 	font-size: $h1FontSize;
+// 	line-height: 1.111em;
+// 	margin-bottom: .25em;
+// }
+// h2 {
+// 	font-size: $h2FontSize;
+// 	line-height: 1.111em;
+// 	margin-bottom: .5em;
+// }
+// h3 {
+// 	font-size: $h3FontSize;
+// 	line-height: 1.333em;
+// 	margin-bottom: .5em;
+// }
+// h4 {
+// 	font-size: $h4FontSize;
+// 	line-height: 1.5em;
+// 	margin-bottom: .333em;
+// }
+// h5 {
+// 	font-size: $h5FontSize;
+// 	@include rem('line-height', $baseLineInEms);
+// 	margin-bottom: .25em;
+// }
+// h6 {
+// 	font-size: $h6FontSize;
+// 	text-transform: uppercase;
+// 	@include rem('line-height', $baseLineInEms);
+// 	margin-bottom: .25em;
+// }
+
+// Subheading
+// -----------------------------------------------------------------------------
+// hgroup h1:first-child,
+// hgroup h2:first-child,
+// hgroup h3:first-child,
+// hgroup h4:first-child,
+// hgroup h5:first-child, {
+// 	margin-bottom: 0;
+// }
+// h1.subheading,
+// h2.subheading,
+// h3.subheading,
+// h4.subheading,
+// h5.subheading {
+// 	font-weight: 300;
+// }
+// h1.subheading {
+// 	font-size: $h1SubheadingFontSize;
+// }
+// h2.subheading {
+// 	font-size: $h2SubheadingFontSize;
+// }
+// h3.subheading {
+// 	font-size: $h3SubheadingFontSize;
+// }
+// h4.subheading {
+// 	font-size: $h4SubheadingFontSize;
+// }
+// h5.subheading {
+// 	font-size: $h5SubheadingFontSize;
+// }
+
+
