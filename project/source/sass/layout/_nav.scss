@@ -1,0 +1,40 @@
+/* =======================
+	 Layout/Nav
+	 ======================= */
+
+.navbar {
+	position: fixed;
+	bottom: 0;
+	@extend %navbar;
+	@extend %nav-fullwidth;
+	a {
+		color: $colorNavBar-link;
+	}
+}
+@mixin png-img($image-name) {
+	background-image: image-url('#{$image-name}.png', false, false);
+}
+%bg-no-repeat {
+	background-repeat: no-repeat;
+}
+%nav-bar-icon {
+	background-position: center 8px;
+	padding: 44px 8px 8px;
+	@extend %bg-no-repeat;
+	background-size: 46px 36px;
+}
+.item-database {
+	background-color: $colorNavBar-01;
+	@include png-img(icon-database-navbar);
+	@extend %nav-bar-icon;
+}
+.item-ebook {
+	background-color: $colorNavBar-02;
+	@include png-img(icon-ebook-navbar);
+	@extend %nav-bar-icon;
+}
+.item-home {
+	background-color: $colorNavBar-03;
+	@include png-img(icon-home-navbar);
+	@extend %nav-bar-icon;
+}

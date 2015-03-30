@@ -1,0 +1,47 @@
+// ======================
+// Layouts styles
+// ======================
+$page-container: ".container";
+
+#{$page-container} {
+	@include container($total-columns, $break-ipad, $break-desktop);
+	@include pie-clearfix;
+}
+// 做版面
+// 一般版（mobile first）
+
+// iPad 版本
+@include at-breakpoint($break-ipad) {
+
+}
+
+// Desktop 版本
+@include at-breakpoint($break-desktop) {
+
+}
+
+// 幫助排版的背景，可以拿掉 
+// $grid-background-column-color: rgba(#97D561,.5);
+// .container {
+// 	.debug & {
+// 		@include susy-grid-background;
+// 		@include at-breakpoint($break-ipad) {
+// 			@include susy-grid-background;
+// 		}
+// 		@include at-breakpoint($break-desktop) {
+// 			@include susy-grid-background;
+// 		}
+// 	}
+// }
+
+/* =======================
+   Layout styles
+   ======================= */
+// @import "layout/global";
+@import "layout/nav";
+// @import "layout/header";
+// @import "layout/home";
+// @import "layout/footer";
+/* =======================
+   Page Layout styles
+   ======================= */
