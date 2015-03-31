@@ -1,0 +1,26 @@
+/* =======================
+   Layout/Global
+   ======================= */
+
+body {
+  // position: relative;
+  text-align: center; //RWD MOBILE FIRST
+  color: $black-60;
+  font-family: $baseFontFamily;
+}
+
+%cp {cursor: pointer;}
+%no-repeat {background-repeat: no-repeat;}
+.btn {
+  @include btn(#ffffff,#dbdcdb);
+  + .btn {
+    margin-left: .5em;
+  }
+}
+.btn-primary {
+  border: 1px solid $black-35;
+  color: $colorLink;
+  &:hover {
+    color: $colorLinkHover;
+  }
+}
