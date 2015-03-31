@@ -1,0 +1,33 @@
+doctype html
+html lang="zh-TW"
+	head
+		meta charset="utf-8"
+		title 
+		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+		link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css"
+	body
+		.container
+			.header
+			.search-list-caption 檢索結果共20筆
+			.search-list
+				table cellspacing="0" cellpadding="0" border="0"
+					tr
+						th width="10%"
+						th width="70%" 題 名
+						th width="20%" 國父年歲
+
+					- (1..10).each do |n|
+						tr
+							td #{n}.
+							td =zh_lorem_words 25
+							td #{n + 10}
+			.units-row
+				a.btn.btn-primary.unit-50 href='javascript:;' 上一頁
+				a.btn.btn-primary.unit-50 href='javascript:;' 下一頁
+				a.btn.btn-primary.unit-50 href='javascript:;' 重新查詢
+
+		nav.navbar
+			ul
+				li.item-database: a href='javascript:;' 中山學術資料庫
+				li.item-ebook: a href='javascript:;' 電子書瀏覽
+				li.item-home: a href='javascript:;' 回首頁

@@ -1,0 +1,43 @@
+doctype html
+html lang="zh-TW"
+	head
+		meta charset="utf-8"
+		title 
+		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+		link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css"
+	body
+		.container
+			.header
+			.search-row
+				input placeholder="請輸入檢索字串"
+			.search-type-row
+				ul.search-type
+					li
+						input type="checkbox" 不限欄位
+					li
+						input type="checkbox" 題名
+					li
+						input type="checkbox" 全文內容
+					li
+						input type="checkbox" 相關人名
+					li
+						input type="checkbox" 相關地名
+					li
+						input type="checkbox" 相關專有名詞
+					li
+						| 年代區間：
+						select
+							option value="請選擇" 請選擇
+						| 年 ~
+						select
+							option value="請選擇" 請選擇
+						| 年
+			.units-row
+				a.btn.btn-primary.unit-50 href='javascript:;' 清除
+				a.btn.btn-primary.unit-50 href='javascript:;' 查詢
+
+		nav.navbar
+			ul
+				li.item-database: a href='javascript:;' 中山學術資料庫
+				li.item-ebook: a href='javascript:;' 電子書瀏覽
+				li.item-home: a href='javascript:;' 回首頁
