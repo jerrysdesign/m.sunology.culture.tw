@@ -24,3 +24,8 @@ body {
     color: $colorLinkHover;
   }
 }
+.btn-retrieval {
+  @include btn(#d35400,#db7632);
+  float: right;
+  text-indent: 0;
+}

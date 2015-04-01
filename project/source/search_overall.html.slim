@@ -6,8 +6,9 @@ html lang="zh-TW"
 		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 		link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css"
 	body
-		== render 'partials/banner'
+		== render 'partials/header'
 		.container
+			.search-list-caption 整合檢索
 			.search-row
 				input#SEARCH placeholder="請輸入檢索字串"
 			.search-type-row
@@ -19,12 +20,6 @@ html lang="zh-TW"
 					li
 						input type="checkbox" 全文內容
 					li
-						input type="checkbox" 相關人名
-					li
-						input type="checkbox" 相關地名
-					li
-						input type="checkbox" 相關專有名詞
-					li
 						| 年代區間：
 						select
 							option value="請選擇" 請選擇
@@ -32,6 +27,22 @@ html lang="zh-TW"
 						select
 							option value="請選擇" 請選擇
 						| 年
+				ul.search-type.overall
+					li 
+						label.unit-33
+							input type="checkbox" checked="checked" 全部類型
+						label.unit-33
+							input type="checkbox" checked="checked" 國父全集
+						label.unit-33
+							input type="checkbox" checked="checked" 國父年譜
+					li
+						label.unit-33
+							input type="checkbox" checked="checked" 期刊論文
+						label.unit-33
+							input type="checkbox" checked="checked" 博碩士論文
+						label.unit-33
+							input type="checkbox" checked="checked" 孫學專書
+
 		.space01
 			.iamfixed
 				.units-row
@@ -44,6 +55,7 @@ html lang="zh-TW"
 						li.item-home: a href='javascript:;' 回首頁
 		javascript:
 			var clearSearch = document.getElementById("CLEARSEARCH");
+
 			function eraseText(){
 				document.getElementById("SEARCH").value = "";
 			}

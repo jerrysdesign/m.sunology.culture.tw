@@ -1,0 +1,31 @@
+doctype html
+html lang="zh-TW"
+	head
+		meta charset="utf-8"
+		title 
+		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+		link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css"
+	body
+		== render 'partials/header'
+		.container
+			.search-list-caption 檢索結果共324筆
+			.search-list
+				table width="100%" cellspacing="0" cellpadding="0" border="0"
+					tr
+						th width="10%"
+						th width="70%" 題 名
+						th width="20%" 資料類型
+
+					- (1..20).each do |n|
+						tr
+							td #{n}.
+							td =zh_lorem_words 50
+							td =zh_lorem_words 4
+		.space02
+			.iamfixed			
+				.units-row.btn-row
+					a.btn.btn-primary.unit-33 href='javascript:;' 上一頁
+					a.btn.btn-primary.unit-33 href='javascript:;' 下一頁
+					a.btn.btn-primary.unit-33 href='javascript:;' 重新查詢
+				.footer
+					.footer-title Copyright &copy; 2014 國立國父紀念館

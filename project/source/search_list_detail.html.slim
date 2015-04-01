@@ -1,0 +1,53 @@
+doctype html
+html lang="zh-TW"
+	head
+		meta charset="utf-8"
+		title 
+		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+		link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css"
+	body
+		== render 'partials/banner'
+		.container
+			.search-list-caption
+				| 詳目顯示
+				a.btn.btn-retrieval.unit-33 回檢索結果
+				.clear
+			.search-list
+				table.detail width="100%" cellspacing="0" cellpadding="0" border="0"
+					tr
+						th width="30%" 生平歷程：
+						td width="70%" 家世與求學：
+					tr
+						th 題名：
+						td 卒業於意奧蘭尼書院，由夏威夷王頒予英文文法第二獎
+					tr
+						th 民國紀年：
+						td 民國紀元前三十年
+					tr
+						th 清曆紀年：
+						td 清光緒八年
+					tr
+						th 千支紀年：
+						td 壬午年
+					tr
+						th 西元紀年：
+						td 一八八二年
+					tr
+						th 舊曆日月：
+						td 六月十三日
+					tr
+						th 新曆日月：
+						td 六月二十七日
+
+		.space01
+			.iamfixed
+				.units-row.btn-row
+					a.btn.btn-primary.unit-33 href='javascript:;' 上一筆
+					a.btn.btn-primary.unit-33 href='javascript:;' 下一筆
+					a.btn.btn-primary.unit-33 href='javascript:;' 回檢索結果
+
+				nav.navbar
+					ul
+						li.item-database: a href='javascript:;' 中山學術資料庫
+						li.item-ebook: a href='javascript:;' 電子書瀏覽
+						li.item-home: a href='javascript:;' 回首頁

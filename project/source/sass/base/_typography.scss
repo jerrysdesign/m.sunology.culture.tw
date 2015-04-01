@@ -28,8 +28,13 @@ a {
 		color: $actionRespond;
 	}
 }
-img { max-width: 100%;}
-
+img {
+	width: 100%;
+	display:block
+}
+td {
+	vertical-align: top;
+}
 
 // HEADINGS
 // -----------------------------------------------------------------------------
